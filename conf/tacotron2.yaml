@@ -1,5 +1,5 @@
 name: Tacotron2
-sample_rate: 16000
+sample_rate: 22050
 # <PAD>, <BOS>, <EOS> will be added by the tacotron2.py script
 labels: [' ', '!', ',', '-', '.', '?', 
   'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 
@@ -11,7 +11,7 @@ n_stride: 256
 pad_value: -11.52
 train_dataset: ???
 validation_datasets: ???
-batch_size: 48
+batch_size: 24
 
 model:
   labels: ${labels}
@@ -21,7 +21,7 @@ model:
       manifest_filepath: ${train_dataset}
       max_duration: null
       min_duration: 0.1
-      trim: false
+      trim: true
       int_values: false
       normalize: true
       sample_rate: ${sample_rate}
@@ -44,7 +44,7 @@ model:
       int_values: false
       normalize: true
       sample_rate: ${sample_rate}
-      trim: false
+      trim: true
       # bos_id: 66
       # eos_id: 67
       # pad_id: 68  These parameters are added automatically in Tacotron2
