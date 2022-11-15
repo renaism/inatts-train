@@ -19,5 +19,4 @@ pip install wget undecode
 ```
 ```
 python -m pip install git+https://github.com/NVIDIA/NeMo.git@v1.4.0#egg=nemo_toolkit[tts]
-Collecting nemo_toolkit[tts]
 ```
