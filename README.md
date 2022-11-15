@@ -15,7 +15,7 @@ sudo nvidia-smi
 sudo apt-get install sox libsndfile1 ffmpeg
 ```
 ```
-pip install wget undecode
+pip install wget unidecode
 ```
 ```
 python -m pip install git+https://github.com/NVIDIA/NeMo.git@v1.4.0#egg=nemo_toolkit[tts]
